@@ -1,7 +1,7 @@
 # 50 Projects in 50 Days - HTML, CSS, and JavaScript
 - [Course](https://50projects50days.com/) by By Brad Traversy, Florin Pop
 
-## Learn the basics of HTML, CSS, and JavaScript in 50 days by working on 50 different projects
+## Practice the basics of HTML, CSS, and JavaScript in 50 days by working on 50 different projects
 ### Projects
 - [x] Project Starter Boilerplate
 - [ ] Expanding Cards
