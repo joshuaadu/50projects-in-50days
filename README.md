@@ -1,47 +1,48 @@
 # 50 Projects in 50 Days - HTML, CSS, and JavaScript
-- Course by By Brad Traversy, Florin Pop
+- [Course](https://50projects50days.com/) by By Brad Traversy, Florin Pop
 
 ## Learn the basics of HTML, CSS, and JavaScript in 50 days by working on 50 different projects
 ### Projects
-- Expanding Cards
-- Progress Steps
-- Rotating Navigation Animation
+- [x] Project Starter Boilerplate
+- [ ] Expanding Cards
+- [ ] Progress Steps
+- [ ] Rotating Navigation Animation
 
-- Hidden Search Widget
+- [ ] Hidden Search Widget
 
-- Blurry Loading
+- [ ] Blurry Loading
 
-- Scroll Animation
+- [ ] Scroll Animation
 
-- Split Landing Page
+- [ ] Split Landing Page
 
-- Form Wave
+- [ ] Form Wave
 
-- Sound Board
+- [ ] Sound Board
 
-- Dad Jokes
+- [ ] Dad Jokes
 
-- Event Keycodes
+- [ ] Event Keycodes
 
-- FAQ Collapse
+- [ ] FAQ Collapse
 
-- Random Choice Picker
+- [ ] Random Choice Picker
 
-- Animated Navigation
+- [ ] Animated Navigation
 
-- Incrementing Counter
+- [ ] Incrementing Counter
 
-- Drink Water
+- [ ] Drink Water
 
-- Movie App
+- [ ] Movie App
 
-- Background Slider
+- [ ] Background Slider
 
-- Theme Clock
+- [ ] Theme Clock
 
-- Button Ripple Effect
+- [ ] Button Ripple Effect
 
-- Drag N Drop
+- [ ] Drag N Drop
 
-- Drawing App
+- [ ] Drawing App
 
