@@ -4,7 +4,7 @@
 ## Practice the basics of HTML, CSS, and JavaScript in 50 days by working on 50 different projects
 ### Projects
 - [x] Project Starter Boilerplate
-- [ ] Expanding Cards
+- [x] Expanding Cards
 - [ ] Progress Steps
 - [ ] Rotating Navigation Animation
 
