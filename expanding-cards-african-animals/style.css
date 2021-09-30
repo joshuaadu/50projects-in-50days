@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', 'san-serif';
+    /* height: 100vh; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    overflow-y: scroll;
+}
+
+.container {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-bottom: 2rem;
+    /* margin-bottom: 1rem; */
+}
+
+
+.lion-panel {
+    background: url("https://source.unsplash.com/UxHol6SwLyM");
+    
+}
+
+.elephant-panel {
+    background: url("https://source.unsplash.com/QJbyG6O0ick");
+    
+}
+
+.giraffe-panel {
+    background: url("https://source.unsplash.com/eQdDUdi5qLk");
+    
+}
+
+.zebra-panel {
+    background: url("https://source.unsplash.com/UgidX4V13Gc");
+    
+}
+
+.antelope-panel {
+    background: url("https://source.unsplash.com/Vu59UaEwj2g");
+    
+}
+.panel {
+    flex: 1 1 0;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    transition: flex 300ms ease-in;
+}
+
+.panel h2 {
+    font-family: 'Caveat Brush', cursive;
+    padding: 1rem;
+}
+.active {
+    flex: 100%;
+    height: 60vh;
+    order: -1;
+}
