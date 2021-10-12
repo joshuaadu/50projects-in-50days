@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap');
+:root{
+    --body-background-color: #f6f7fb;
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+    --circle-color: #999;
+    --white: #fff;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    width: 30rem;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.progress-container::before {
+    content: '';
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0.2rem;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.progress-path {
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0.2rem;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.4s ease;
+
+}
+
+.circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 0.15rem solid var(--circle-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    transition: 0.4s ease;
+}
+
+.circle.active {
+    border: 0.15rem solid var(--line-border-fill);
+}
+
+.progress-button {
+    background-color: var(--line-border-fill);
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+    border-radius: 0.2rem;
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    transition: 0.4s ease;
+    font-family: inherit;
+}
+
+.progress-button:active {
+    transform: scale(0.98);
+}
+
+.progress-button:focus {
+    outline: none;
+}
+.progress-button:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}
