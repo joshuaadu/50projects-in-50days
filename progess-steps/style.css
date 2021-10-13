@@ -62,8 +62,8 @@ body {
 }
 
 .circle {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     border: 0.15rem solid var(--circle-color);
     display: flex;
@@ -87,6 +87,7 @@ body {
     border: none;
     transition: 0.4s ease;
     font-family: inherit;
+    font-size: 0.9rem;
 }
 
 .progress-button:active {
