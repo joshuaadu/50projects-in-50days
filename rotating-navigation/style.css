@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #014101;
+    color: #012501;
+    /* width: 100vw; */
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.container {
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 3.5rem;
+}
+
+.container.show {
+    transform: rotate(-20deg);
+}
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #ffff00;
+    position: relative;
+    border-radius: 50%;
+    transition: transform 0.5s linear;
+}
+
+
+.circle button {
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+}
+
+button.open {
+    left: 60%
+}
+button.close {
+    top: 60%;
+    
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+
+
