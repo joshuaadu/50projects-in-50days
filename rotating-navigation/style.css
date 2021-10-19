@@ -51,6 +51,7 @@ body {
     background-color: transparent;
     border: none;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 button.open {
@@ -61,6 +62,10 @@ button.close {
     
     transform: rotate(90deg);
     transform-origin: top left;
+}
+
+button:focus {
+    outline: none;
 }
 
 .content img {
