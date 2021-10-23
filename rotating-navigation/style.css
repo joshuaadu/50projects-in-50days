@@ -48,14 +48,14 @@ body {
     transition: transform 0.5s linear;
 }
 
-/* .circle.rotate {
+.circle.rotate {
     transform: rotate(-60deg);
-} */
+}
 
 /* Rotate circle when positioned within the main container */
-.container.show-nav .circle {
+/* .container.show-nav .circle {
     transform: rotate(-70deg);
-}
+} */
 
 .circle button {
     position: absolute;
@@ -73,8 +73,8 @@ button.open {
     left: 65%
 }
 button.close {
-    /* left: 60%; */
-    top: 60%;
+    left: 60%;
+    top: 70%;
     transform: rotate(90deg);
     transform-origin: top left;
 }
