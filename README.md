@@ -5,8 +5,8 @@
 ### Projects
 - [x] Project Starter Boilerplate
 - [x] Expanding Cards
-- [ ] Progress Steps
-- [ ] Rotating Navigation Animation
+- [x] Progress Steps
+- [x] Rotating Navigation Animation
 
 - [ ] Hidden Search Widget
 
