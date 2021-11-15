@@ -17,11 +17,11 @@ body {
 
 .background {
     background: url("https://source.unsplash.com/random/1024x900") no-repeat center center / cover;
-    width: 100vw;
-    height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
+    width: calc(100vw + 60px); /*Calculate to remove blur spacing */ 
+    height: calc(100vh + 60px); /*Calculate to remove blur spacing */
+    top: -30px; /*Remove blur spacing */
+    left: -30px; /*Remove blur spacing */
     /* grid-column: 1 / 2; */
     /* grid-row: 1 / 2; */
     z-index: -1;

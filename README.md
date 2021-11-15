@@ -1,16 +1,19 @@
 # 50 Projects in 50 Days - HTML, CSS, and JavaScript
+
 - [Course](https://50projects50days.com/) by By Brad Traversy, Florin Pop
 
 ## Practice the basics of HTML, CSS, and JavaScript in 50 days by working on 50 different projects
+
 ### Projects
+
 - [x] Project Starter Boilerplate
 - [x] Expanding Cards
 - [x] Progress Steps
 - [x] Rotating Navigation Animation
 
-- [ ] Hidden Search Widget
+- [x] Hidden Search Widget
 
-- [ ] Blurry Loading
+- [x] Blurry Loading
 
 - [ ] Scroll Animation
 
@@ -45,4 +48,3 @@
 - [ ] Drag N Drop
 
 - [ ] Drawing App
-
