@@ -15,7 +15,7 @@
 
 - [x] Blurry Loading
 
-- [ ] Scroll Animation
+- [x] Scroll Animation
 
 - [ ] Split Landing Page
 
