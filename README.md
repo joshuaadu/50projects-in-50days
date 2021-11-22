@@ -17,7 +17,7 @@
 
 - [x] Scroll Animation
 
-- [ ] Split Landing Page
+- [x] Split Landing Page
 
 - [ ] Form Wave
 
