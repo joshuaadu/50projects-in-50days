@@ -65,7 +65,7 @@ h1 {
 .split,
 .split.active,
 .split.non-active::before {
-	transition: all 0.7s ease-in 0.1s;
+	transition: all 0.5s ease-in;
 }
 
 .cosmetics {
@@ -86,7 +86,7 @@ h1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	top: 25%;
+	top: 30%;
 	left: 50%;
 	transform: translateX(-50%);
 	font-size: 1rem;
