@@ -1,11 +1,13 @@
-const splitItems = document.querySelectorAll(".split");
-splitItems.forEach((item) => {
-	item.addEventListener("mouseenter", () => {
-		item.classList.add("active");
-		item.classList.remove("non-active");
-	});
-	item.addEventListener("mouseleave", () => {
-		item.classList.remove("active");
-		item.classList.add("non-active");
-	});
-});
+const nextJokeBtn = document.querySelector(".next")
+const prevJokeBtn = document.querySelector(".prev")
+const newJokeBtn = document.querySelector(".new")
+
+let jokes = []
+function disableBtns() {
+	if (jokes.length === 0) {
+		prevJokeBtn.disabled = true && (nextJokeBtn.disabled = true)
+	}
+	console.log("working")
+}
+
+disableBtns()
