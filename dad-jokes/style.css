@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+	--inactive-overlay-color: rgb(228, 215, 215, 0.3);
+	--heading1-bg-color: rgb(151, 149, 149, 0.4);
+	--heading1-color: rgb(54, 49, 49);
+	--button-color: rgb(54, 49, 49);
+	--button-border-color: rgb(54, 49, 49);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", "san-serif";
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: center;
+	background-color: #6909c4;
+}
+
+h3 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	opacity: 0.5;
+	margin: 0;
+}
+
+.container {
+	width: 500px;
+	max-width: 100%;
+	background-color: white;
+	font-family: inherit;
+	/* height: 100%; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	padding: 50px 20px;
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 4px red, inset 0px 0px 8px yellow,
+		5px 5px 10px rgb(80, 78, 78);
+}
+
+.jokes {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.btns {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.btn {
+	font-size: 15px;
+	padding: 0.5rem;
+	border-radius: 10px;
+	padding: 0.5rem 1rem;
+	border: none;
+	color: white;
+	background-color: rgb(75, 0, 130);
+	font-weight: bold;
+	/* outline: none; */
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:disabled {
+	cursor: not-allowed;
+	background-color: rgb(75, 0, 130, 0.3);
+}
