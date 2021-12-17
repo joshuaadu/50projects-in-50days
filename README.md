@@ -21,9 +21,7 @@
 
 -   [x] Form Wave
 
--   [ ] Sound Board
-
--   [ ] Dad Jokes
+-   [x] Dad Jokes
 
 -   [ ] Event Keycodes
 
