@@ -8,48 +8,40 @@ let currentIndex = 0;
 prevJokeBtn.disabled = true;
 nextJokeBtn.disabled = true;
 
-// Listen to any click event on the body to
-// activate or deactivate buttons
-document.body.addEventListener("click", disableBtns);
-
-// Activate or disable buttons
-function disableBtns() {
-	// Disable previous and next button from start
-	// Activate previous when there are lower indexes
-	// from the current index of the jokes array
-	if (jokes.length > 0 && currentIndex > 0) {
-		prevJokeBtn.disabled = false;
-		console.log("Previous button disabled");
-	}
-	// Activate next button when the index of
-	// the current joke in display is lower than the total number of jokes in the array
-	else if (currentIndex < jokes.length - 1) {
-		nextJokeBtn.disabled = false;
-		// prevJokeBtn.disabled = false && (nextJokeBtn.disabled = false);
-	} else {
-		prevJokeBtn.disabled = true;
-		nextJokeBtn.disabled = true;
-	}
-	console.log("working");
-	console.log(jokes);
-}
+// Fetch and display initial joke
+window.addEventListener("load", (e) => {
+	getJoke().then((e) => {
+		displayJoke();
+	});
+	disableBtns();
+});
 
 // Display a new joke
 newJokeBtn.addEventListener("click", (e) => {
 	getJoke().then((e) => {
 		currentIndex = jokes.length - 1;
 		displayJoke();
+		changePrevBtnActiveState();
+		changeNextBtnActiveState();
 	});
 });
+
 // Display previous joke in jokes array
 prevJokeBtn.addEventListener("click", (e) => {
 	currentIndex--;
 	displayJoke();
+	// disableBtns();
+	changePrevBtnActiveState();
+	changeNextBtnActiveState();
 });
+
 // Display next joke in jokes array
 nextJokeBtn.addEventListener("click", (e) => {
 	currentIndex++;
 	displayJoke();
+	// disableBtns();
+	changePrevBtnActiveState();
+	changeNextBtnActiveState();
 });
 
 // Get joke from API
@@ -64,15 +56,28 @@ async function getJoke() {
 	jokes.push(joke);
 }
 
-function generateJoke() {
-	getJoke();
-}
-
+// Display joke of the current index of the jokes array
 function displayJoke() {
 	jokeDiv.textContent = jokes[currentIndex].joke;
 }
-disableBtns();
-getJoke().then((e) => {
-	displayJoke();
-});
-// console.log(jokes);
+
+// Disable buttons
+function disableBtns() {
+	// Disable previous and next buttons
+	prevJokeBtn.disabled = true;
+	nextJokeBtn.disabled = true;
+}
+
+// Activate or disable prev button
+function changePrevBtnActiveState() {
+	jokes.length > 0 && currentIndex > 0
+		? (prevJokeBtn.disabled = false)
+		: (prevJokeBtn.disabled = true);
+}
+
+// Activate or disable next button
+function changeNextBtnActiveState() {
+	currentIndex < jokes.length - 1
+		? (nextJokeBtn.disabled = false)
+		: (nextJokeBtn.disabled = true);
+}
